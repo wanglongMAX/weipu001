@@ -1,0 +1,401 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Microsoft YaHei, Helvetica, Arial, sans-serif;
+}
+
+p,h1,h2,h3,h4,h5,h6,ul,dl,dd,ol {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container-b {
+    max-width: 1140px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*定位*/
+.p-rel {
+    position: relative;
+}
+
+.p-abs {
+    position: absolute;
+}
+
+.p-fix {
+    position: fixed;
+}
+
+/*padding值*/
+.pdy-2,.pdt-2 {
+    padding-top: 2rem;
+}
+
+.pdy-2,.pdb-2 {
+    padding-bottom: 2rem;
+}
+
+.pdx-2,.pdl-2 {
+    padding-left: 2rem;
+}
+
+.pdx-2,.pdr-2 {
+    padding-right: 2rem;
+}
+
+.pdy-3,.pdt-3 {
+    padding-top: 2.5rem;
+}
+
+.pdy-3,.pdb-3 {
+    padding-bottom: 2.5rem;
+}
+
+.pdx-3,.pdl-3 {
+    padding-left: 2.5rem;
+}
+
+.pdx-3,.pdr-3 {
+    padding-right: 2.5rem;
+}
+
+.pdy-4,.pdt-4 {
+    padding-top: 3.5rem
+}
+
+.pdy-4,.pdb-4 {
+    padding-bottom: 3.5rem;
+}
+
+.pdx-4,.pdl-4 {
+    padding-left: 3.5rem
+}
+
+.pdx-4,.pdr-4 {
+    padding-right: 3.5rem;
+}
+
+.pdy-5,.pdt-5 {
+    padding-top: 4rem
+}
+
+.pdy-5,.pdb-5 {
+    padding-bottom: 4rem;
+}
+
+.pdx-5,.pdl-5 {
+    padding-left: 4rem
+}
+
+.pdx-5,.pdr-5 {
+    padding-right: 4rem;
+}
+
+/*margin值*/
+.mgy-2,.mgt-2 {
+    margin-top: 2rem;
+}
+
+.mgy-2,.mgb-2 {
+    margin-bottom: 2rem;
+}
+
+.mgx-2,.mgl-2 {
+    margin-left: 2rem;
+}
+
+.mgx-2,.mgr-2 {
+    margin-right: 2rem;
+}
+
+.mgy-3,.mgt-3 {
+    margin-top: 2.5rem;
+}
+
+.mgy-3,.mgb-3 {
+    margin-bottom: 2.5rem;
+}
+
+.mgx-3,.mgl-3 {
+    margin-left: 2.5rem;
+}
+
+.mgx-3,.mgr-3 {
+    margin-right: 2.5rem;
+}
+
+.mgy-4,.mgt-4 {
+    margin-top: 3.5rem
+}
+
+.mgy-4,.mgb-4 {
+    margin-bottom: 3.5rem;
+}
+
+.mgx-4,.mgl-4 {
+    margin-left: 3.5rem
+}
+
+.mgx-4,.mgr-4 {
+    margin-right: 3.5rem;
+}
+
+.mgy-5,.mgt-5 {
+    margin-top: 4rem
+}
+
+.mgy-5,.mgb-5 {
+    margin-bottom: 4rem;
+}
+
+.mgx-5,.mgl-5 {
+    margin-left: 4rem
+}
+
+.mgx-5,.mgr-5 {
+    margin-right: 4rem;
+}
+
+/*字体颜色 、背景颜色*/
+.color0 {
+    color: #000;
+}
+
+.color1 {
+    color: #FFF;
+}
+
+.color3 {
+    color: #333;
+}
+
+.color6 {
+    color: #666;
+}
+
+.color9 {
+    color: #999;
+}
+
+.colord {
+    color: #DDD;
+}
+
+.color9d {
+    color: #9d9d9d;
+}
+
+.color-orange1 {
+    color: #f25125;
+}
+
+.color1a {
+    color: #1a1a1a;
+}
+
+.colorblue {
+    color: #5C9FFF;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-2c {
+    background-color: #2c2c2c;
+}
+
+/*头部*/
+.nav-content {
+    position: relative;
+    z-index: 10;
+}
+
+.navbar-list {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-header>li>a {
+    position: relative;
+    font-size: .875em;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 2em;
+    padding-bottom: .6em;
+    transition: color .5s;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.navbar-header>li>a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: #187dff;
+    z-index: -1;
+    transition: width .5s;
+}
+
+.navbar-header>li>a:hover::before {
+    width: 100%;
+}
+
+.navbar-header>li>a.active::before {
+    width: 100%;
+}
+
+.right-img {
+    position: relative;
+}
+
+.right-img>a>i {
+    display: block;
+    width: 130px;
+    height: 35px;
+    transition: all .5s;
+    background: url("https://weipu.checkbloc.com/weipu/css/header-btn1.png")/*tpa=http://svip.weipu.com/weike/images/https://weipu.checkbloc.com/weipu/css/header-btn1.png*/ no-repeat center center;
+}
+
+.right-img>a:hover i {
+    background-image: url("https://weipu.checkbloc.com/weipu/css/header-btn2.png")/*tpa=http://svip.weipu.com/weike/images/https://weipu.checkbloc.com/weipu/css/header-btn2.png*/;
+}
+
+.navbar-list .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+}
+
+.navbar-list .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,.1);
+}
+
+/*底部*/
+.bottoms{
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #35363a;
+    padding-bottom: 30px;
+}
+.bottoms ul{font-size: 0;}
+.bottoms ul>li{font-size: 14px;display: inline-block;padding-left: 70px;line-height: 14px;margin-bottom: 20px;}
+.bottoms ul>li:first-child{padding-left: 0px;}
+.bottoms ol>li{font-size: 14px;display: inline-block;padding-left: 34px;margin-bottom: 20px;}
+.bottoms ol>li:first-child{padding-left: 0px;}
+.bottoms li>a{color: #7d7d7d;}
+.bottoms li>a:hover{color: #8e8e8e;}
+.inform{font-size: 12px;text-align: center;color: #7d7d7d;padding-bottom: 20px;}
+
+/*在小于576像素的屏幕里,这里的样式才生效*/
+@media (max-width: 575.98px) {
+    /*头部*/ .navbar-header>li>a {
+        line-height: 2.5em;
+        margin: 0 .5em;
+    }
+
+    .right-img {
+        margin-top: .5em;
+    }
+
+    /*右侧客服 返回顶部*/
+    .aside-bar {
+        right: 5px;
+    }
+
+    .aside-bar>li {
+        padding: .2em;
+    }
+
+    .navbar-collapse {
+        background-color: rgba(22,53,106,.8);
+        padding-bottom: 1em;
+    }
+
+    /*底部*/
+    .footer-list>ul>li>a>span {
+        width: 62%;
+    }
+
+    .footer-list>ul:last-child {
+        padding-left: 1em;
+    }
+
+    .footer-list>ul:nth-child(2) {
+        padding: 1em 1em;
+    }
+}
+
+/*在576和768像素的屏幕里,这里的样式才生效*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /*头部*/ .navbar-header>li>a {
+        line-height: 2.5em;
+        margin: 0 .5em;
+    }
+
+    .right-img {
+        margin-top: .5em;
+    }
+
+    .navbar-collapse {
+        background-color: rgba(22,53,106,.8);
+        padding-bottom: 1em;
+    }
+
+    /*底部*/
+    .footer-list>ul:last-child {
+        padding-left: 1em;
+    }
+
+    .footer-list>ul:nth-child(2) {
+        padding: 1em 1em;
+    }
+}
+
+/*在768和992像素的屏幕里,这里的样式才生效*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /*头部*/ .navbar-header>li>a {
+        line-height: 3.2em;
+        margin: 0 .5em;
+    }
+
+    .right-img {
+        margin-top: 1em;
+    }
+
+    .navbar-collapse {
+        background-color: rgba(22,53,106,.8);
+        padding-bottom: 1em;
+    }
+
+    /*底部*/
+    .footer-list>ul:last-child {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/*在992和1200像素的屏幕里,这里的样式才生效*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}

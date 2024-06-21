@@ -1,0 +1,224 @@
+.bg-f3{background-color: #f3f3f3;}
+/*banner*/
+.banner{height: 1080px;}
+.banner-img{width: 100%;height: 1080px;position: relative;overflow: hidden;}
+.banner-img>img{width: 2400px;position: absolute;left: 50%;margin-left: -1200px;}
+.banner-bg{pointer-events: auto;}
+.banner-bg>li{width: 100%}
+.banner-bg>li>div{position: absolute;top: 0;left: 0;right: 0;bottom: 0;text-align: center;}
+.banner-bg>li:nth-child(2)>div{padding-top: 8%;z-index: 1;}
+.banner-bg>li:nth-child(3)>div{padding-top: 8%;z-index: 6;}
+.banner-bg>li:nth-child(4)>div{left: -2%;padding-top: 8%;z-index: 10;}
+.banner-bg>li:nth-child(5)>div{left: 2%;padding-top: 19%;z-index: 16;}
+.banner-bg>li:nth-child(6)>div{padding-top: 9%;z-index: 18;}
+/*版本选择*/
+.edition-choice{position: relative;margin-top: -42em;}
+.edition-list{display: flex;display: -ms-flexbox;justify-content: center;}
+.edition-list>li{padding: 0 1em;}
+.edition-list>li>a>div{width: 158px;height: 189px;background-repeat: no-repeat;background-size: 100% 100%;}
+.edition-img1{background-image: url("https://weipu.checkbloc.com/weipu/images/banner-edition1.png");}
+.edition-img2{background-image: url("https://weipu.checkbloc.com/weipu/images/banner-edition2.png");}
+.edition-img3{background-image: url("https://weipu.checkbloc.com/weipu/images/banner-edition3.png");}
+.edition-img4{background-image: url("https://weipu.checkbloc.com/weipu/images/banner-edition4.png");}
+
+.edition-list>li>a{position: relative;display:block;overflow:hidden;}
+.edition-list>li a::before {content: "";position: absolute;width: 100%;height: 100%;top: 0;overflow: hidden;}
+.edition-list>li>a:hover::before{
+    background: -webkit-linear-gradient(left top, rgba(255,255,255,.4)20%,rgba(255,255,255,.2)60%,rgba(255,255,255,.1)100%);
+    background: -o-linear-gradient(bottom right, rgba(255,255,255,.4)20%,rgba(255,255,255,.2)60%,rgba(255,255,255,.1)100%);
+    background: -moz-linear-gradient(bottom right, rgba(255,255,255,.4)20%,rgba(255,255,255,.2)60%,rgba(255,255,255,.1)100%);
+    background: linear-gradient(to bottom right, rgba(255,255,255,.4)20%,rgba(255,255,255,.2)60%,rgba(255,255,255,.1)100%);
+}
+
+
+
+
+.edition-list a:hover .edition-img1{}
+.edition-list a:hover .edition-img2{}
+.edition-list a:hover .edition-img3{}
+.edition-list a:hover .edition-img4{}
+
+.edition-content{color: #7e87a6;}
+.edition-title{margin-top: 2em;margin-bottom: 1em;}
+.edition-title>b{font-size: .875em;}
+.edition-title>b:nth-child(2){padding: 0 1em;}
+.edition-text{font-size: .75em;}
+.content-1,.content-2,.content-3,.content-4{width: 39%;left: 31%;text-align: center;position: absolute;}
+.content-2,.content-3,.content-4{display: none;}
+.banner-btm{position: relative;top: 18em;text-align: center;}
+/*特色功能*/
+.line-title{padding-top: 7em;padding-bottom: 5em;text-align: center;}
+.fun-list{text-align: center;padding-bottom: 2em;}
+.fun-list>li{margin-bottom: 6em;}
+/*检测降重系统*/
+.detecting-system:first-child{padding-bottom: 16%;}
+.detecting-system:last-child{padding-bottom: 5em;}
+.detecting-system:first-child>div.testing-img{text-align: center;}
+.text-content{margin: auto 0;}
+.text-content>h5{font-weight: bold;color: #1a1a1a;padding-bottom: .5em;}
+.text-content>p{font-size: .8em;color: #7a7a7a;margin-bottom: .5em;}
+.detecting-system:first-child>.text-content{padding-right: 6em;}
+.detecting-system:last-child>.text-content{padding-left: 6em;}
+.hide-img{display: none;}
+/*优势*/
+.advantage-list>li{padding: 1em 2em;text-align: center;}
+.advantage-list b{display: block;font-size: 1.1em;padding: 1em 0;}
+.advantage-list p{font-size: .875em;color: #7a7a7a;text-align: left;}
+/*合作伙伴*/
+.partner-list{padding-bottom: 4em;}
+.swiper-pagination{padding-right: 2.5em;}
+
+/*右侧客服 返回顶部*/
+.aside-bar{position: fixed;z-index: 10;top: 90%;right: 10px;text-align: center;background-color: #fff;box-shadow: 0 2px 10px rgba(89,89,89,.2);}
+.aside-bar>li{padding: .6em;}
+.aside-bar>li>a{font-size: .75em;color: #4c4c4c;text-decoration: none;}
+.aside-bar>li>a:hover{color: #4291e3;transition: all .5s;}
+.aside-bar>li>a>p{margin-bottom: 0;padding-top: .4em;}
+.aside-bar>li>a>i{display: block;width: 100%;height: 31px;transition: all .5s;}
+.img-top{background: url("../image/top-1.png") no-repeat center center;}
+.aside-bar>li>a:hover .img-top{background-image: url("../image/top-2.png");}
+
+
+
+
+
+
+/*在小于576像素的屏幕里,这里的样式才生效*/
+@media (max-width: 575.98px) {
+    /*banner*/
+    .banner-bg>li:nth-child(2)>div{padding-top: 8em;}
+    .banner-bg>li:nth-child(3)>div{padding-top: 8em;}
+    .banner-bg>li:nth-child(4)>div{padding-top: 8em;}
+    .banner-bg>li:nth-child(5)>div{left: 5%;padding-top: 17em;}
+    .banner-bg>li:nth-child(6)>div{padding-top: 60px;padding-left: 15px;padding-right: 15px;}
+    /*版本选择*/
+    .edition-list{
+        width: 100%;
+        padding: 0 56px;
+        display: block;
+        text-align: center;
+        font-size: 0;
+        margin-bottom: 0;
+    }
+    .edition-list>li{
+        font-size: 13px;
+        display: inline-block;
+        padding: 0px 20px;
+        padding-bottom: 20px;
+        width:50%;
+        box-sizing: border-box;
+    }
+    .edition-list>li:nth-child(3),.edition-list>li:nth-child(4){padding-bottom: 0;}
+    .edition-list>li a::before{left: 0;}
+    .edition-choice{position: relative;margin-top: -910px;}
+    .banner-btm{top: 22em;}
+    .edition-list>li>a>div{width: 100%;height: auto;}
+    .edition-list>li>a>div>img{width: 100%;height: auto;min-height: auto!important;}
+    .content-1, .content-2, .content-3, .content-4{width: 80%;left: 10%;}
+
+    /*特色功能*/
+    .fun-list>li:nth-child(2n-1){padding-left: 0;}
+    .fun-list>li:nth-child(2n){padding-right: 0;}
+    .fun-list>li>img{max-width: 80%}
+    .fun-list>li:nth-child(4)>img{padding-top: .2em;}
+    .fun-list>li:nth-child(5)>img{max-width: 92%;}
+    .fun-list>li:nth-child(6)>img{padding-top: .1em;}
+    /*检测降重系统*/
+    .detecting-system{text-align: center;}
+    .detecting-system:first-child{padding-bottom: 36%;}
+    .testing-img>img{padding: 2em 0;}
+    .text-content>p{font-size: .75em;}
+    .detecting-system:first-child>.text-content,
+    .detecting-system:last-child>.text-content{padding-right: .5em;padding-left: .5em;}
+    .show-img{display: none;}
+    .hide-img{display: block;}
+    /*合作伙伴*/
+    .swiper-pagination{padding-right: 0;}
+}
+@media (max-width: 530.98px) {
+    .edition-choice{margin-top: -920px;}
+    .edition-list{padding: 0 35px;}
+    .banner-bg>li:nth-child(6)>div{padding-top: 60px;}
+}
+@media (max-width: 480.98px) {
+    .edition-list>li{padding-bottom: 15px;}
+    .edition-list>li:nth-child(1){padding-left: 30px;padding-right: 10px;}
+    .edition-list>li:nth-child(2){padding-left: 10px;padding-right: 30px;}
+    .edition-list>li:nth-child(3){padding-left: 30px;padding-right: 10px;}
+    .edition-list>li:nth-child(4){padding-left: 10px;padding-right: 30px;}
+    .edition-list{padding: 0 20px;}
+    .banner-btm{top: 25em;}
+}
+/*在576和768像素的屏幕里,这里的样式才生效*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /*banner*/
+    .banner-bg>li>div>img{width: 80%;}
+    .banner-bg>li:nth-child(2)>div{padding-top: 10em;}
+    .banner-bg>li:nth-child(3)>div{padding-top: 10em;}
+    .banner-bg>li:nth-child(4)>div{padding-top: 10em;}
+    .banner-bg>li:nth-child(5)>div{left: 5%;padding-top: 18em;}
+    .banner-bg>li:nth-child(6)>div{padding-top: 11em;}
+    /*版本选择*/
+    .edition-list>li {padding: 0 .5em;}
+    .edition-list>li>a>div {width: 124px;height: 152px;background-size: 100% 100%;}
+    .edition-choice{position: relative;margin-top: -46em;}
+    .content-1,.content-2,.content-3,.content-4{width: 73%;left: 13%;}
+    .banner-btm{top: 25em;}
+    /*特色功能*/
+    .fun-list>li:nth-child(4){padding-top: .3em;}
+    /*检测降重系统*/
+    .detecting-system{text-align: center;}
+    .detecting-system:first-child{padding-bottom: 28%;}
+    .testing-img>img{padding: 2em 0;}
+    .detecting-system:first-child>.text-content,
+    .detecting-system:last-child>.text-content{padding-right: 0;padding-left: 0;}
+    .show-img{display: none;}
+    .hide-img{display: block;}
+    /*合作伙伴*/
+    .swiper-pagination{padding-right: 0;}
+}
+
+/*在768和992像素的屏幕里,这里的样式才生效*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /*banner*/
+    .banner-bg>li>div>img{width: 88%;}
+    .banner-bg>li:nth-child(2)>div{padding-top: 8em;}
+    .banner-bg>li:nth-child(3)>div{padding-top: 8em;}
+    .banner-bg>li:nth-child(4)>div{padding-top: 8em;}
+    .banner-bg>li:nth-child(5)>div{left: 5%;padding-top: 18em;}
+    .banner-bg>li:nth-child(6)>div{padding-top: 8em;}
+    /*版本选择*/
+    .edition-choice{margin-top: -46em;}
+    .content-1,.content-2,.content-3,.content-4{width: 80%;left: 11%;}
+    .banner-btm{top: 22em;}
+    /*检测降重系统*/
+    .detecting-system:first-child>div.testing-img{text-align: right;}
+    .detecting-system:first-child>.text-content{padding-right: .5em;}
+    .detecting-system:last-child>.text-content{padding-left: 1.2em;padding-right: 0;}
+    /*优势*/
+    .advantage-list>li{padding: 0 .5em;}
+    /*合作伙伴*/
+    .swiper-pagination{padding-right: 0;}
+}
+
+/*在992和1200像素的屏幕里,这里的样式才生效*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /*banner*/
+    .banner-bg>li:nth-child(2)>div{padding-top: 10%;}
+    .banner-bg>li:nth-child(3)>div{padding-top: 10%;}
+    .banner-bg>li:nth-child(4)>div{padding-top: 10%;}
+    .banner-bg>li:nth-child(5)>div{left: 5%;padding-top: 29%;}
+    .banner-bg>li:nth-child(6)>div{padding-top: 12%;}
+    /*版本选择*/
+    .edition-choice{margin-top: -44em;}
+    .content-1,.content-2,.content-3,.content-4{width: 65%;left: 18%;}
+    .banner-btm{top: 20em;}
+    /*检测降重系统*/
+    .detecting-system:first-child>div.testing-img{text-align: right;}
+    .detecting-system:first-child>.text-content,
+    .detecting-system:last-child>.text-content{padding-right: 0;}
+    /*优势*/
+    .advantage-list>li{padding: 0 1em;}
+    /*合作伙伴*/
+    .swiper-pagination{padding-right: 0;}
+}
